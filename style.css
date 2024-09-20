@@ -6,7 +6,7 @@ body{
 }
 .head{
     display: flex;
-    background: rgb(0, 0, 0);
+    background: #140301;
     color:rgb(255, 255, 255);
     
     justify-content: space-between;
@@ -21,7 +21,6 @@ body{
 
 li {
     list-style-type: none;
-    
   }
   
 .Berserk{
@@ -75,7 +74,7 @@ li {
     /* font-size: 400%; */
     font-family: "Yeseva One", sans-serif;
     text-wrap: nowrap;
-    color: white;
+    color: #fff7b0;
     font-size: 3vw;
     /* flex: 1 .5 0; */
 
@@ -92,7 +91,7 @@ li {
     max-width: 100%;
     min-width: 100px;
     border-radius: 30px;
-    border: 5px solid white;
+    border:3px solid #fff7b0;
     height: auto;
 
 
@@ -112,7 +111,8 @@ li {
     max-width: min-content;
     padding: .2vw .9vw;
     font-family: "Pragati Narrow", serif;
-    
+    color: #492900;
+    background-color: #DAD0D0;
     text-wrap: nowrap;
 }
 
@@ -131,7 +131,9 @@ button{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3%;
+    padding-top: 3%;
+    background-color: #f0eac8;
+    padding-bottom: 60px;
 }
 
 .ttitle{
@@ -139,31 +141,62 @@ button{
     align-items: center;
     font-family: "Yeseva One", sans-serif;
     text-wrap: nowrap;
-    color: rgb(0, 0, 0);
+    color: #2b2319;
     font-size: 3vw;
 }
 
 .CARDS{
     display: flex;
-    justify-content: space-around;
-    align-items: center; 
-    /* flex-wrap: wrap;  */
-    border: 5px solid rgb(0, 0, 0);
-    gap: 1%;
+    justify-content: center;
+    /* align-items: flex-start; */
+    gap: 2vw;
+    width: 100%;
+    padding-top: 60px;
+    
 }
 
-.card1{
-    border: 1px solid rgb(0, 0, 0);
-    /* display: flex; */
+.car {
+    border-radius: 8px;
+    /* padding: 20px; */
+    flex: 1;
+    text-align: center;
+    max-width: 15vw;
+    display: flex;
     flex-direction: column;
+    
 }
+
 
 .tphoto{
-    flex: 1;
-    width: 25vw; 
-    height: 40vh; 
-    background-image: url(./Images/𝙂𝙪𝙩𝙨.jpeg); 
-    background-size: cover; 
-    background-position: center; 
+     width: 100%;
+    height: auto;
+    object-fit: cover;
     background-repeat: no-repeat;
+    
+    margin-bottom: 0.5vw; /* Reduce margin between image and text */
+    /* flex: 1;
+    overflow: hidden; */
+
+}
+
+.car img {
+    width: 100%;   
+    height: auto;  
+    max-width: 230px; 
+    object-fit: cover; 
+    border-radius: 23px; 
+    aspect-ratio: 3/4;
+    border:5px solid #492900;
+}
+
+.tdesc{
+    font-size: 0.9vw;
+    margin-top: 20px; /* Remove top margin for the description */
+    margin-bottom: 3%;
+    align-items: flex-start;
+    color: #140301;
+}
+
+.quote{
+    display: flex;
 }
